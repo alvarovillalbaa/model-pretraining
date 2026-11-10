@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-10",
+  "repository": "alvarovillalbaa/model-training",
+  "implementation_status": "planned",
+  "source_revision": "ba67e510bab2703b1042993744ce099490221c1f",
+  "checks": {
+    "source_tests": null,
+    "staged_whitespace": "passed"
+  },
+  "limits": [
+    "Fresh install and wheel build not run: Storage Guard reports 11.9 GiB free versus 34 GiB required.",
+    "No GPU, provider, model download, paid service, production deployment, or scientific performance claim.",
+    "Documentation-only component: no executable implementation or runtime acceptance is claimed."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "source_repository": "alvarovillalbaa/lab",
+  "source_revision": "ba67e510bab2703b1042993744ce099490221c1f",
+  "original_main": "36bb3839f1bc166fa54824fd8457b28ca5189dae",
+  "history_policy": "Original history remains in Lab; extraction commit preserves original bytes; subsequent commits adapt interfaces.",
+  "sources": [
+    {
+      "path": "docs/specs/steps.md",
+      "section": 5,
+      "start_line": 167,
+      "end_line": 204
+    },
+    {
+      "path": "docs/specs/steps.md",
+      "section": 9,
+      "start_line": 368,
+      "end_line": 412
+    },
+    {
+      "path": "docs/specs/steps.md",
+      "section": 10,
+      "start_line": 412,
+      "end_line": 470
+    },
+    {
+      "path": "docs/specs/steps.md",
+      "section": 11,
+      "start_line": 470,
+      "end_line": 500
+    },
+    {
+      "path": "docs/specs/steps.md",
+      "section": 12,
+      "start_line": 500,
+      "end_line": 581
+    },
+    {
+      "path": "docs/IMPLEMENTATION_BACKLOG.md",
+      "sections": [
+        "Tiny From-Scratch Trainer",
+        "Pretraining",
+        "Post-Training"
+      ]
+    }
+  ]
+}
