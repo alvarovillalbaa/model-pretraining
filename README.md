@@ -21,9 +21,13 @@ runtime installation; implementation acceptance is still future work.
 
 ## Ownership
 
-This component owns the first model implementation, from-scratch pretraining,
+This component owns from-scratch pretraining,
 continued pretraining/cooldown, local training loss and generation checks,
-resumable training state, and portable base-model export.
+resumable training state, and portable base-model export orchestration.
+
+[model-architectures](https://github.com/alvarovillalbaa/model-architectures) owns
+reusable model definitions, forward/generation/cache behavior and weight-format
+compatibility. This trainer can select that library or an external implementation.
 
 [model-posttraining](https://github.com/alvarovillalbaa/model-posttraining) owns
 SFT, preference optimization, and reward-based adaptation of an existing model.

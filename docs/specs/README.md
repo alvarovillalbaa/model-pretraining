@@ -17,6 +17,9 @@ post-training nor serving is required to use the trainer.
   and held-out manifest references; tokenizer identity/hash; optimizer,
   schedule, seed, precision and resource configuration; checkpoint/output
   destinations; and the selected execution adapter.
+- Architecture configuration/forward/cache and portable weight compatibility
+  belong to model-architectures or an external selected library. The trainer
+  owns optimization/data iteration and complete training-state resume semantics.
 - A resume request adds an exact checkpoint reference and its training-state
   identity. It must reject incompatible architecture, tokenizer, data, or
   optimizer-state changes rather than silently start a different experiment.
