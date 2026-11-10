@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-10",
+  "source_repository": "alvarovillalbaa/model-pretraining",
+  "source_revision": "83e0be783b4a15241b6eee285854365ab2a25f9d",
+  "new_repository": "alvarovillalbaa/model-architectures",
+  "new_repository_revision": "ef4c4ebf8870b83a454cd9b880e02bf30a9b7361",
+  "files": [
+    {
+      "source_path": ".gitignore",
+      "source_sha256": "3a27b824fbf244f560dca603e815b1d38eb2ab811954de1e3303f6aa346cd729",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": ".gitignore",
+          "sha256": "3a27b824fbf244f560dca603e815b1d38eb2ab811954de1e3303f6aa346cd729",
+          "relation": "retained_or_adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "AGENTS.md",
+      "source_sha256": "dbf3575d83deb4fd3d631c30ba573d8c9eb7a27f74885aa3d960cf3b433f84d6",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "AGENTS.md",
+          "sha256": "dbf3575d83deb4fd3d631c30ba573d8c9eb7a27f74885aa3d960cf3b433f84d6",
+          "relation": "retained_or_adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "LICENSE",
+      "source_sha256": "6e3ae862a0f98e9f377f98f71fd86160932dad7186416f5509a335703c6fe3b5",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "LICENSE",
+          "sha256": "6e3ae862a0f98e9f377f98f71fd86160932dad7186416f5509a335703c6fe3b5",
+          "relation": "retained_or_adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "README.md",
+      "source_sha256": "e6ac5315006210e601edb9ffe612970d74007dbf55bdf15ca97d201895b93743",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "README.md",
+          "sha256": "16fcc6e9538e24c16a6dd64c685739c8b72b407d31ddbcbd4597a41f259b268a",
+          "relation": "retained_or_adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/results/2026/11-10/model-boundary-expansion.json",
+      "source_sha256": "9abec0826a727b447a9aab34b371b8badd9002ccf943e27780ba868efbbabcec",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/results/2026/11-10/model-boundary-expansion.json",
+          "sha256": "9abec0826a727b447a9aab34b371b8badd9002ccf943e27780ba868efbbabcec",
+          "relation": "retained_or_adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/results/2026/11-10/repository-split.json",
+      "source_sha256": "11c63556b4733cb01a4bb6d96ea8ebdbaa7bec098f4d18cedd8a28a9566e3617",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/results/2026/11-10/repository-split.json",
+          "sha256": "11c63556b4733cb01a4bb6d96ea8ebdbaa7bec098f4d18cedd8a28a9566e3617",
+          "relation": "retained_or_adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/sources/README.md",
+      "source_sha256": "77a4ef36e0beaf89e88d0bd30c4b93f8bdfcca7a311c77ebbe23ea56b7951b08",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/sources/README.md",
+          "sha256": "77a4ef36e0beaf89e88d0bd30c4b93f8bdfcca7a311c77ebbe23ea56b7951b08",
+          "relation": "retained_or_adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/sources/lab-provenance.json",
+      "source_sha256": "29036ff5d3d711e0913094a20f119d02f5e37de46e516d13f937b762bbadf1cc",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/sources/lab-provenance.json",
+          "sha256": "29036ff5d3d711e0913094a20f119d02f5e37de46e516d13f937b762bbadf1cc",
+          "relation": "retained_or_adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/sources/pre-expansion/backlog.md",
+      "source_sha256": "b8374dd220ec73eb4843da917c472f06158554cd511c019da0f07a685b45b09a",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/sources/pre-expansion/backlog.md",
+          "sha256": "b8374dd220ec73eb4843da917c472f06158554cd511c019da0f07a685b45b09a",
+          "relation": "retained_or_adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/sources/pre-expansion/blueprint.md",
+      "source_sha256": "0f71a9fb236c5357e9fd6408eec388c6a0416ca69719d2dc3f2d12f98afbe5b1",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/sources/pre-expansion/blueprint.md",
+          "sha256": "0f71a9fb236c5357e9fd6408eec388c6a0416ca69719d2dc3f2d12f98afbe5b1",
+          "relation": "retained_or_adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/sources/repository-expansion-map.json",
+      "source_sha256": "84b4f49fab5c88784cc316aad631670bd9bb7e92f6e627c44f5689b9d17b04e4",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/sources/repository-expansion-map.json",
+          "sha256": "84b4f49fab5c88784cc316aad631670bd9bb7e92f6e627c44f5689b9d17b04e4",
+          "relation": "retained_or_adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/specs/README.md",
+      "source_sha256": "3568f403ccd9f26b46d9d45b405f1fc1abe24086327253f8f819b263874e2d5c",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/specs/README.md",
+          "sha256": "db5bc1ca4b2d1713a353a45f13a82765c2cd386d490595de6b68880878dafe42",
+          "relation": "retained_or_adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/specs/backlog.md",
+      "source_sha256": "1d332df11fce1d7eddcf4e4b72e13841c698d72b12f7100009e57cc0510de305",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/specs/backlog.md",
+          "sha256": "b9b1464d3cb44570d8577a621c336843f06cecd952010fa36e487e8c0b397307",
+          "relation": "retained_or_adapted"
+        },
+        {
+          "repository": "model-architectures",
+          "path": "docs/sources/pre-extraction-backlog.md",
+          "sha256": "1d332df11fce1d7eddcf4e4b72e13841c698d72b12f7100009e57cc0510de305",
+          "relation": "exact_original_archive"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/specs/blueprint.md",
+      "source_sha256": "325a3a732e4ebae3bdcfcbbbd109b7b937fe44b51a1e2504939ab4f0421afdcc",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/specs/blueprint.md",
+          "sha256": "e11223b4fe907a69079247628fc3be838fddbb2b547fed5cad2b2380bdd43774",
+          "relation": "retained_or_adapted"
+        },
+        {
+          "repository": "model-architectures",
+          "path": "docs/sources/pre-extraction-blueprint.md",
+          "sha256": "325a3a732e4ebae3bdcfcbbbd109b7b937fe44b51a1e2504939ab4f0421afdcc",
+          "relation": "exact_original_archive"
+        }
+      ]
+    },
+    {
+      "source_path": "reports/templates/model_card.md",
+      "source_sha256": "22745f0579075e66fe10ae827436e661230a6a6974df6136f36fa5f2ee3ef59e",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "reports/templates/model_card.md",
+          "sha256": "22745f0579075e66fe10ae827436e661230a6a6974df6136f36fa5f2ee3ef59e",
+          "relation": "retained_or_adapted"
+        }
+      ]
+    }
+  ],
+  "policy": "Complete prior inventory is retained or adapted. Exact archive destinations preserve original bytes. Historical prior maps/receipts are not rewritten."
+}

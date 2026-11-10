@@ -11,8 +11,10 @@ training product. The exact mixed source remains in
 Build one tiny decoder-only training path with tokenizer loading, a packed
 dataset reader, causal attention, the chosen normalization/position/MLP
 components, optimizer/schedule, checkpoint save/load, local validation loss,
-generation, and export. Architecture implementation remains with this first
-trainer; this split does not invent a separate model library.
+generation, and export. Select an explicit architecture implementation from
+[model-architectures](https://github.com/alvarovillalbaa/model-architectures) or
+an external compatible library. Canonical model math is maintained outside
+this trainer; local training/generation checks remain part of its acceptance.
 
 A chat UI and public endpoint are serving consumers of the export. They are not
 required to use or verify this trainer.
