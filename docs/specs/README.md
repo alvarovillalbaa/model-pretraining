@@ -1,27 +1,51 @@
-# model-training specification
+# Model pretraining specification
 
 Last updated: 2026-11-10
 
-Status: planned. All runtime capabilities below remain planned.
+Status: planned. The target capabilities below are requirements, not current
+functions or a released wire schema.
 
-## Responsibility
+## Purpose and consumer
 
-Model implementations, pretraining, SFT/DPO/RL post-training, checkpoint resume, generation smoke checks, and export.
+Build a base language model from a declared architecture and frozen data, or
+continue pretraining from an explicitly supplied compatible checkpoint. Neither
+post-training nor serving is required to use the trainer.
 
-## First next work
+## Target interface
 
-- [ ] Build the smallest local trainer with checkpoint/resume and deterministic generation.
-- [ ] Keep data and execution backends explicit optional inputs.
-- [ ] Use nanochat and autoresearch as separately pinned implementations/references; preserve upstream identity.
+- A pretraining request supplies the architecture/init policy; immutable train
+  and held-out manifest references; tokenizer identity/hash; optimizer,
+  schedule, seed, precision and resource configuration; checkpoint/output
+  destinations; and the selected execution adapter.
+- A resume request adds an exact checkpoint reference and its training-state
+  identity. It must reject incompatible architecture, tokenizer, data, or
+  optimizer-state changes rather than silently start a different experiment.
+- A run emits observed training metrics and status, resumable checkpoints, and
+  a portable model export with weights/config/tokenizer references and hashes.
+  The portable export does not require the optimizer state to be consumed.
+- Evaluation is an optional external consumer of frozen model exports. A local
+  loss/generation check does not become a capability or safety benchmark.
 
-## Interfaces and composition
+These are behavioral interfaces; no CLI, Python API, artifact schema, or
+adapter is implemented yet.
 
-Specify the smallest public API against the first real consumer before implementing it. Use explicit inputs, artifacts, versions, and dependency declarations. A planned interface is not an implementation.
+## Prerequisites and scope
 
-[Inherited blueprint](blueprint.md) preserves the relevant original design sections. Provider claims, dates, estimates, and unimplemented features there are historical requirements, not new measurements.
+Use a tiny authorized local corpus and a declared tokenizer before scaling.
+The first implementation must select one model/export format and one local
+execution path, pin its environment, and record resource limits. A CPU toy
+path is acceptable; remote GPU access and paid runs retain the owner's gates.
 
-[Inherited backlog](backlog.md) records the original planning status; use the implementation status above for the current boundary.
+SFT, DPO/IPO/KTO/ORPO, reward-based post-training, deployment, and inference
+benchmark methodology are outside this owner. Training data curation and
+tokenizer training are upstream capabilities, not hidden side effects.
 
-## Acceptance
+## Next work and acceptance
 
-The first implementation must install/run independently, declare dependencies, include a useful example and focused behavior checks, and record remaining limitations. Do not mark this project implemented solely because the documentation exists.
+Follow [the scoped backlog](backlog.md). A first accepted implementation must
+run with its own declared environment, produce a useful local result, resume a
+checkpoint, and export a model that a separately installed consumer can load.
+Record the data/tokenizer/code/environment identities, seeds, failures, and
+observed time/cost coverage. Unknown cost remains unknown.
+
+[Blueprint](blueprint.md) · [Original source and relocation](../sources/README.md)

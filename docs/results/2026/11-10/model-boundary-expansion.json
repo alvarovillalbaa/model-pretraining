@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-10",
+  "component": "model-pretraining",
+  "status": "planned_specification",
+  "source_repository": "alvarovillalbaa/model-training",
+  "source_revision": "24e69c525a293281b28ff36f5ef4c3558f05fcd6",
+  "scope": "Separate base/continued pretraining from existing-model post-training.",
+  "checks": {
+    "active_relative_markdown_links": 54,
+    "links_scope": "All four changed homes; exact historical snapshots excluded from current-navigation checking.",
+    "source_map_records": [
+      {
+        "source": "alvarovillalbaa/model-training",
+        "records": 10
+      },
+      {
+        "source": "alvarovillalbaa/model-inference",
+        "records": 9
+      }
+    ],
+    "unique_frozen_snapshots_verified": 4,
+    "whitespace": "git diff --cached --check --find-copies=100% --find-copies-harder passed in all four homes",
+    "planned_status_labels": true,
+    "package_manifests_or_engines_created": false
+  },
+  "proof_limits": [
+    "Documentation and source-relocation checks only; no tests, package builds, installs, GPU jobs, model calls or provider requests were run.",
+    "GitHub creation, repository renames, pushes and PRs are root-owned publication work and remain pending."
+  ]
+}

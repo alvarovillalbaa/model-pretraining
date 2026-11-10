@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-10",
+  "kind": "repository_boundary_expansion",
+  "source_repository": "alvarovillalbaa/model-training",
+  "source_revision": "24e69c525a293281b28ff36f5ef4c3558f05fcd6",
+  "canonical_repository": "alvarovillalbaa/model-pretraining",
+  "separated_repository": "alvarovillalbaa/model-posttraining",
+  "source_lab_revision": "ba67e510bab2703b1042993744ce099490221c1f",
+  "original_lab_sections": {
+    "retained": [
+      5,
+      9,
+      10,
+      11
+    ],
+    "separated": [
+      12
+    ]
+  },
+  "history_policy": "Repository identity and Git history are preserved under the canonical name. Mixed blueprints/backlogs remain byte-exact pre-expansion source snapshots. Current requirements have one active owner per capability; no engine is claimed.",
+  "files": [
+    {
+      "source_path": "LICENSE",
+      "source_sha256": "6e3ae862a0f98e9f377f98f71fd86160932dad7186416f5509a335703c6fe3b5",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "LICENSE",
+          "role": "retained_or_adapted",
+          "sha256": "6e3ae862a0f98e9f377f98f71fd86160932dad7186416f5509a335703c6fe3b5",
+          "content_relation": "identical"
+        },
+        {
+          "repository": "model-posttraining",
+          "path": "LICENSE",
+          "role": "separated_active_scope",
+          "sha256": "6e3ae862a0f98e9f377f98f71fd86160932dad7186416f5509a335703c6fe3b5",
+          "content_relation": "identical"
+        }
+      ]
+    },
+    {
+      "source_path": "README.md",
+      "source_sha256": "d57671696a5501c11de2bce87020232d3d8dd5953b4e533fd7f237d742970c86",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "README.md",
+          "role": "retained_or_adapted",
+          "sha256": "e6ac5315006210e601edb9ffe612970d74007dbf55bdf15ca97d201895b93743",
+          "content_relation": "adapted"
+        },
+        {
+          "repository": "model-posttraining",
+          "path": "README.md",
+          "role": "separated_active_scope",
+          "sha256": "0f72cc8aeb2c3d3f2eeb7c9ca8fc1f42c98ecd0e1f6e490d11d4836e422c5874",
+          "content_relation": "adapted"
+        }
+      ]
+    },
+    {
+      "source_path": ".gitignore",
+      "source_sha256": "3a27b824fbf244f560dca603e815b1d38eb2ab811954de1e3303f6aa346cd729",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": ".gitignore",
+          "role": "retained_or_adapted",
+          "sha256": "3a27b824fbf244f560dca603e815b1d38eb2ab811954de1e3303f6aa346cd729",
+          "content_relation": "identical"
+        },
+        {
+          "repository": "model-posttraining",
+          "path": ".gitignore",
+          "role": "separated_active_scope",
+          "sha256": "3a27b824fbf244f560dca603e815b1d38eb2ab811954de1e3303f6aa346cd729",
+          "content_relation": "identical"
+        }
+      ]
+    },
+    {
+      "source_path": "AGENTS.md",
+      "source_sha256": "49b5b493c9829c7a876a5b73bb75b2cbf996e1f6b33d0ef088f23da01072b5e3",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "AGENTS.md",
+          "role": "retained_or_adapted",
+          "sha256": "dbf3575d83deb4fd3d631c30ba573d8c9eb7a27f74885aa3d960cf3b433f84d6",
+          "content_relation": "adapted"
+        },
+        {
+          "repository": "model-posttraining",
+          "path": "AGENTS.md",
+          "role": "separated_active_scope",
+          "sha256": "99890c88b303e843e11535de4ed55875145e1364d84a9591ac3ddd145f456f62",
+          "content_relation": "adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "reports/templates/model_card.md",
+      "source_sha256": "22745f0579075e66fe10ae827436e661230a6a6974df6136f36fa5f2ee3ef59e",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "reports/templates/model_card.md",
+          "role": "retained_or_adapted",
+          "sha256": "22745f0579075e66fe10ae827436e661230a6a6974df6136f36fa5f2ee3ef59e",
+          "content_relation": "identical"
+        },
+        {
+          "repository": "model-posttraining",
+          "path": "reports/templates/model_card.md",
+          "role": "adapted_lineage_template",
+          "sha256": "a196b235b8b22f65c33226f88cdf095f96be00861aea2287204ea971a725fab9",
+          "content_relation": "adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/specs/README.md",
+      "source_sha256": "e4e997861e1314c29d74493876e1196c8573a111979fb2a23d064bfffc14db58",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/specs/README.md",
+          "role": "retained_or_adapted",
+          "sha256": "3568f403ccd9f26b46d9d45b405f1fc1abe24086327253f8f819b263874e2d5c",
+          "content_relation": "adapted"
+        },
+        {
+          "repository": "model-posttraining",
+          "path": "docs/specs/README.md",
+          "role": "separated_active_scope",
+          "sha256": "bffc13e4ccd743b9957be1b452ab190f778d5c679193e91bc005b60e0d6439cd",
+          "content_relation": "adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/specs/backlog.md",
+      "source_sha256": "b8374dd220ec73eb4843da917c472f06158554cd511c019da0f07a685b45b09a",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/sources/pre-expansion/backlog.md",
+          "role": "frozen_original",
+          "sha256": "b8374dd220ec73eb4843da917c472f06158554cd511c019da0f07a685b45b09a",
+          "content_relation": "identical"
+        },
+        {
+          "repository": "model-pretraining",
+          "path": "docs/specs/backlog.md",
+          "role": "narrowed_active_scope",
+          "sha256": "1d332df11fce1d7eddcf4e4b72e13841c698d72b12f7100009e57cc0510de305",
+          "content_relation": "adapted"
+        },
+        {
+          "repository": "model-posttraining",
+          "path": "docs/specs/backlog.md",
+          "role": "separated_active_scope",
+          "sha256": "1e9df36847c0639766454092bc655825bf0e5f0967e3a8c658b945ded5ecc7c5",
+          "content_relation": "adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/specs/blueprint.md",
+      "source_sha256": "0f71a9fb236c5357e9fd6408eec388c6a0416ca69719d2dc3f2d12f98afbe5b1",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/sources/pre-expansion/blueprint.md",
+          "role": "frozen_original",
+          "sha256": "0f71a9fb236c5357e9fd6408eec388c6a0416ca69719d2dc3f2d12f98afbe5b1",
+          "content_relation": "identical"
+        },
+        {
+          "repository": "model-pretraining",
+          "path": "docs/specs/blueprint.md",
+          "role": "narrowed_active_scope",
+          "sha256": "325a3a732e4ebae3bdcfcbbbd109b7b937fe44b51a1e2504939ab4f0421afdcc",
+          "content_relation": "adapted"
+        },
+        {
+          "repository": "model-posttraining",
+          "path": "docs/specs/blueprint.md",
+          "role": "separated_active_scope",
+          "sha256": "f93debdc056ac3401a24f449bb708c553b3f0b33a6c6ad51475944aa279c23d0",
+          "content_relation": "adapted"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/sources/lab-provenance.json",
+      "source_sha256": "29036ff5d3d711e0913094a20f119d02f5e37de46e516d13f937b762bbadf1cc",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/sources/lab-provenance.json",
+          "role": "retained_historical",
+          "sha256": "29036ff5d3d711e0913094a20f119d02f5e37de46e516d13f937b762bbadf1cc",
+          "content_relation": "identical"
+        }
+      ]
+    },
+    {
+      "source_path": "docs/results/2026/11-10/repository-split.json",
+      "source_sha256": "11c63556b4733cb01a4bb6d96ea8ebdbaa7bec098f4d18cedd8a28a9566e3617",
+      "destinations": [
+        {
+          "repository": "model-pretraining",
+          "path": "docs/results/2026/11-10/repository-split.json",
+          "role": "retained_historical",
+          "sha256": "11c63556b4733cb01a4bb6d96ea8ebdbaa7bec098f4d18cedd8a28a9566e3617",
+          "content_relation": "identical"
+        }
+      ]
+    }
+  ]
+}
